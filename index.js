@@ -49,7 +49,7 @@ function collect_data(array, index){
 
                  setTimeout(()=>{
                     collect_data(array, ++index);            
-                }, 30000);
+                 }, 1000 * Math.floor(Math.random() * 30) + 5);
 
                 return;
             }
@@ -63,7 +63,7 @@ function collect_data(array, index){
                 
                  setTimeout(()=>{
                     collect_data(array, ++index);            
-                }, 30000);
+                }, 1000 * Math.floor(Math.random() * 30) + 5);
             })
         });
     })      
